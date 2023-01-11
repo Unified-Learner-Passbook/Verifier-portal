@@ -3,7 +3,7 @@ import React from 'react';
 import './style.css';
 
 function certificate(props) {
-  const { name, subject, date } = props;
+  const { name, mother, father, dob, school, date } = props;
   return (
     <div className='outer-border bg-white box-border'>
       <div className='inner-dotted-border'>
@@ -140,26 +140,26 @@ function certificate(props) {
         <p className='certify-small'>
           परिषद के अभिलेखानुसर (according to the Board's record)-{' '}
           <span style={{ color: 'black', fontSize: '12px' }}>
-            {name ? name : 'AMIT YADAV'}
+            {name ? name : 'AAKASH'}
           </span>
         </p>
         <p className='certify-small'>
           आत्मज/आत्मजा श्रीमती (son/daughter of Mrs.)-{' '}
           <span style={{ color: 'black', fontSize: '12px' }}>
-            {name ? name : 'MEERA DEVI'}
+            {mother ? mother : 'MEERA DEVI'}
           </span>
         </p>
         <p className='certify-small'>
           एवं श्री (and Mr.)-{' '}
           <span style={{ color: 'black', fontSize: '12px' }}>
-            {name ? name : 'MUNNA LAL YADAV'}
+            {father ? father : 'MUNNA LAL YADAV'}
           </span>
         </p>
         <p className='certify-small'>
           जिन्की जन्मतिथि (whose date of birth is)-{' '}
           <span style={{ color: 'black', fontSize: '12px' }}>
-            {name
-              ? name
+            {dob
+              ? dob
               : '9th NOVEMBER NINETEEN HUNDRED NINETY NINE (09/11/1999)'}
           </span>
         </p>
@@ -168,7 +168,7 @@ function certificate(props) {
           High School Examination held in February/March 2023 from
           School/Centre)-{' '}
           <span style={{ color: 'black', fontSize: '12px' }}>
-            {name ? name : 'M VACHASPATI I C SULEM SARAI LUCKNOW'}
+            {school ? school : 'M VACHASPATI I C SULEM SARAI LUCKNOW'}
           </span>
         </p>
 
